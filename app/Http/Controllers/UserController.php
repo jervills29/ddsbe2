@@ -58,8 +58,8 @@
             if($users->isClean()){
                 return $this->errorResponse('At least one value must change', Response::HTTP_UNPROCESSABLE_ENTITY);
             }
-            $user->save();
-            return $this->successResponse($user);
+            $users->save();
+            return $this->successResponse($users);
 
             /*
             $this->validate($request, $rules);
